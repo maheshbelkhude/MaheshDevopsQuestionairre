@@ -1,0 +1,31 @@
+name: build-scan-workflow
+on:
+  push:
+    branches:
+      - '**'
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      
+      - name: Update Maven settings.xml with GitHub token
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}           
+        run: |
+            SETTINGS_FILE="/home/ubuntu/.m2/settings.xml"
+            if [ -f "$SETTINGS_FILE" ]; then
+            sed -i 's|<password>.*</password>|<password>'"${{ secrets.GITHUB_TOKEN }}"'</password>|' "$SETTINGS_FILE"
+            echo "Updated $SETTINGS_FILE with GitHub Token"
+            else
+            echo "$SETTINGS_FILE does not exist"
+            fi
+          
+      - name: Run Maven build file
+        run: |
+          cd /home/ubuntu/myagent/_work/frame/frame/services
+          chmod +x maven-build.sh
+          source /etc/profile.d/maven.sh
+          ./maven-build.sh
+		  
