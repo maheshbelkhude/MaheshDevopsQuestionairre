@@ -1,0 +1,15 @@
+Recommendations
+===============
+
+1. Unused/Empty App Service Plan
+--------------------------------
+Business Impact: Medium
+Recommendation: The identified App Service Plan is unused or empty. Consider deleting or scaling it down to reduce costs.
+Subscription ID: 606d2635-6401-4ebc-8206-bf473e999adc
+Subscription Name: Free Trial (606d2635-6401-4ebc-8206-bf473e999adc)
+Resource Group: my-node-rg
+Resource Name: asp-mynoderg-94a4
+Resource Type: App Service
+Last Updated: 2025-02-16T17:55:15.1660000Z
+Potential Annual Cost Savings: Not specified
+Currency: Not specified

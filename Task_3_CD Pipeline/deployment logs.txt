@@ -1,0 +1,94 @@
+2025-02-13T12:01:35.1100317Z ##[section]Starting: DeployApp
+2025-02-13T12:01:36.0177615Z ##[section]Starting: Initialize job
+2025-02-13T12:01:36.0181951Z Agent name: 'ubuntu'
+2025-02-13T12:01:36.0182675Z Agent machine name: 'ubuntu'
+2025-02-13T12:01:36.0183029Z Current agent version: '4.251.0'
+2025-02-13T12:01:37.7399649Z Agent running as: 'ubuntu'
+2025-02-13T12:01:37.7443400Z Prepare build directory.
+2025-02-13T12:01:37.7758254Z Set build variables.
+2025-02-13T12:01:37.7776773Z Download all required tasks.
+2025-02-13T12:01:38.7323998Z Checking job knob settings.
+2025-02-13T12:01:38.7326160Z    Knob: DockerActionRetries = true Source: $(VSTSAGENT_DOCKER_ACTION_RETRIES) 
+2025-02-13T12:01:38.7326882Z    Knob: UseGitLongPaths = true Source: $(USE_GIT_LONG_PATHS) 
+2025-02-13T12:01:38.7329290Z    Knob: EnableIssueSourceValidation = true Source: $(ENABLE_ISSUE_SOURCE_VALIDATION) 
+2025-02-13T12:01:38.7329696Z    Knob: AgentEnablePipelineArtifactLargeChunkSize = true Source: $(AGENT_ENABLE_PIPELINEARTIFACT_LARGE_CHUNK_SIZE) 
+2025-02-13T12:01:38.7330882Z    Knob: ContinueAfterCancelProcessTreeKillAttempt = true Source: $(VSTSAGENT_CONTINUE_AFTER_CANCEL_PROCESSTREEKILL_ATTEMPT) 
+2025-02-13T12:01:38.7331258Z    Knob: ProcessHandlerSecureArguments = false Source: $(AZP_75787_ENABLE_NEW_LOGIC) 
+2025-02-13T12:01:38.7331524Z    Knob: ProcessHandlerSecureArguments = false Source: $(AZP_75787_ENABLE_NEW_LOGIC_LOG) 
+2025-02-13T12:01:38.7331770Z    Knob: ProcessHandlerTelemetry = true Source: $(AZP_75787_ENABLE_COLLECT) 
+2025-02-13T12:01:38.7332040Z    Knob: UseNewNodeHandlerTelemetry = True Source: $(DistributedTask.Agent.USENEWNODEHANDLERTELEMETRY) 
+2025-02-13T12:01:38.7332298Z    Knob: ProcessHandlerEnableNewLogic = true Source: $(AZP_75787_ENABLE_NEW_PH_LOGIC) 
+2025-02-13T12:01:38.7332666Z    Knob: EnableResourceMonitorDebugOutput = true Source: $(AZP_ENABLE_RESOURCE_MONITOR_DEBUG_OUTPUT) 
+2025-02-13T12:01:38.7332930Z    Knob: EnableResourceUtilizationWarnings = true Source: $(AZP_ENABLE_RESOURCE_UTILIZATION_WARNINGS) 
+2025-02-13T12:01:38.7333297Z    Knob: IgnoreVSTSTaskLib = true Source: $(AZP_AGENT_IGNORE_VSTSTASKLIB) 
+2025-02-13T12:01:38.7333524Z    Knob: FailJobWhenAgentDies = true Source: $(FAIL_JOB_WHEN_AGENT_DIES) 
+2025-02-13T12:01:38.7333820Z    Knob: CheckForTaskDeprecation = true Source: $(AZP_AGENT_CHECK_FOR_TASK_DEPRECATION) 
+2025-02-13T12:01:38.7334168Z    Knob: CheckIfTaskNodeRunnerIsDeprecated246 = True Source: $(DistributedTask.Agent.CheckIfTaskNodeRunnerIsDeprecated246) 
+2025-02-13T12:01:38.7334509Z    Knob: UseNode20ToStartContainer = True Source: $(DistributedTask.Agent.UseNode20ToStartContainer) 
+2025-02-13T12:01:38.7334819Z    Knob: LogTaskNameInUserAgent = true Source: $(AZP_AGENT_LOG_TASKNAME_IN_USERAGENT) 
+2025-02-13T12:01:38.7335070Z    Knob: UseFetchFilterInCheckoutTask = true Source: $(AGENT_USE_FETCH_FILTER_IN_CHECKOUT_TASK) 
+2025-02-13T12:01:38.7335382Z    Knob: Rosetta2Warning = true Source: $(ROSETTA2_WARNING) 
+2025-02-13T12:01:38.7335930Z    Knob: AddForceCredentialsToGitCheckout = True Source: $(DistributedTask.Agent.AddForceCredentialsToGitCheckout) 
+2025-02-13T12:01:38.7336252Z Finished checking job knob settings.
+2025-02-13T12:01:38.7598827Z Start tracking orphan processes.
+2025-02-13T12:01:38.7971576Z ##[section]Finishing: Initialize job
+2025-02-13T12:01:38.8026773Z ##[section]Async Command Start: DetectDockerContainer
+2025-02-13T12:01:38.8027256Z ##[section]Async Command End: DetectDockerContainer
+2025-02-13T12:01:38.8028361Z ##[section]Async Command Start: DetectDockerContainer
+2025-02-13T12:01:38.8028543Z ##[section]Async Command End: DetectDockerContainer
+2025-02-13T12:01:38.8147626Z ##[section]Starting: Download Artifact
+2025-02-13T12:01:38.8236581Z ==============================================================================
+2025-02-13T12:01:38.8237419Z Task         : Download pipeline artifact
+2025-02-13T12:01:38.8237742Z Description  : Download a named artifact from a pipeline to a local path
+2025-02-13T12:01:38.8237848Z Version      : 1.230.0
+2025-02-13T12:01:38.8238102Z Author       : Microsoft Corporation
+2025-02-13T12:01:38.8238767Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/download-pipeline-artifact
+2025-02-13T12:01:38.8238897Z ==============================================================================
+2025-02-13T12:01:39.1974235Z Download from the specified build: #27
+2025-02-13T12:01:39.1975607Z Download artifact to: /home/ubuntu/myagent/_work/2/
+2025-02-13T12:01:40.7530080Z Downloading 1 pipeline artifacts...
+2025-02-13T12:01:40.7611283Z Using default max parallelism.
+2025-02-13T12:01:42.7121477Z Using default max parallelism.
+2025-02-13T12:01:42.7128990Z Max dedup parallelism: 192
+2025-02-13T12:01:42.7131524Z DomainId: 0
+2025-02-13T12:01:42.8643965Z ApplicationInsightsTelemetrySender will correlate events with X-TFS-Session 8439345e-6ed4-4475-a459-01ec710f66fc
+2025-02-13T12:01:42.8743799Z Hashtype: Dedup1024K
+2025-02-13T12:01:42.8929424Z DedupManifestArtifactClient will correlate http requests with X-TFS-Session 8439345e-6ed4-4475-a459-01ec710f66fc
+2025-02-13T12:01:42.8939749Z Start downloading artifact - drop
+2025-02-13T12:01:42.8959815Z Minimatch patterns: [**]
+2025-02-13T12:01:43.4453938Z Filtered 1513 files from the Minimatch filters supplied.
+2025-02-13T12:01:43.4514823Z Downloaded 0.0 MB out of 9.3 MB (0%).
+2025-02-13T12:01:48.4438680Z Downloaded 9.2 MB out of 9.3 MB (98%).
+2025-02-13T12:01:48.4438818Z 
+2025-02-13T12:01:48.4484042Z Download statistics:
+2025-02-13T12:01:48.4484513Z Total Content: 9.2 MB
+2025-02-13T12:01:48.4484866Z Physical Content Downloaded: 3.5 MB
+2025-02-13T12:01:48.4485225Z Compression Saved: 5.7 MB
+2025-02-13T12:01:48.4485542Z Local Caching Saved: 0.0 MB
+2025-02-13T12:01:48.4485806Z Chunks Downloaded: 1,413
+2025-02-13T12:01:48.4486260Z Nodes Downloaded: 0
+2025-02-13T12:01:48.4486332Z 
+2025-02-13T12:01:48.4486708Z Download completed.
+2025-02-13T12:01:49.7231467Z ApplicationInsightsTelemetrySender correlated 2 events with X-TFS-Session 8439345e-6ed4-4475-a459-01ec710f66fc
+2025-02-13T12:01:49.7231738Z Downloading artifact finished.
+2025-02-13T12:01:49.7266219Z ##[section]Finishing: Download Artifact
+2025-02-13T12:01:49.7285942Z ##[section]Starting: Deploy to Azure App Service
+2025-02-13T12:01:49.7293459Z ==============================================================================
+2025-02-13T12:01:49.7293570Z Task         : Azure Web App
+2025-02-13T12:01:49.7293638Z Description  : Deploy an Azure Web App for Linux or Windows
+2025-02-13T12:01:49.7293746Z Version      : 1.247.1
+2025-02-13T12:01:49.7293820Z Author       : Microsoft Corporation
+2025-02-13T12:01:49.7293881Z Help         : https://aka.ms/azurewebapptroubleshooting
+2025-02-13T12:01:49.7293949Z ==============================================================================
+2025-02-13T12:01:52.6319039Z Got service connection details for Azure App Service:'my-demo-node-app'
+2025-02-13T12:02:02.1275976Z Package deployment using ZIP Deploy initiated.
+2025-02-13T12:03:15.4217199Z Deploy logs can be viewed at https://my-demo-node-app-hpasechjbqc6bqbg.scm.centralus-01.azurewebsites.net/api/deployments/692f6cf9-2011-437e-82c7-ec2b3f4389cf/log
+2025-02-13T12:03:15.4219991Z Successfully deployed web package to App Service.
+2025-02-13T12:03:22.7122747Z Successfully updated deployment History at https://my-demo-node-app-hpasechjbqc6bqbg.scm.centralus-01.azurewebsites.net/api/deployments/271739448200426
+2025-02-13T12:03:23.7083458Z App Service Application URL: https://my-demo-node-app-hpasechjbqc6bqbg.centralus-01.azurewebsites.net
+2025-02-13T12:03:26.8798759Z ##[section]Finishing: Deploy to Azure App Service
+2025-02-13T12:03:26.8821065Z ##[section]Starting: Finalize Job
+2025-02-13T12:03:26.8829371Z Cleaning up task key
+2025-02-13T12:03:26.8830282Z Start cleaning up orphan processes.
+2025-02-13T12:03:26.9211671Z ##[section]Finishing: Finalize Job
+2025-02-13T12:03:26.9233895Z ##[section]Finishing: DeployApp

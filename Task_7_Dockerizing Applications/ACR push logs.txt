@@ -1,0 +1,73 @@
+2025-02-14T13:30:50.4925304Z ##[section]Starting: push docker image to ACR
+2025-02-14T13:30:50.5178761Z ==============================================================================
+2025-02-14T13:30:50.5178889Z Task         : Docker
+2025-02-14T13:30:50.5178957Z Description  : Build or push Docker images, login or logout, start or stop containers, or run a Docker command
+2025-02-14T13:30:50.5179066Z Version      : 2.248.1
+2025-02-14T13:30:50.5179123Z Author       : Microsoft Corporation
+2025-02-14T13:30:50.5179207Z Help         : https://aka.ms/azpipes-docker-tsg
+2025-02-14T13:30:50.5179277Z ==============================================================================
+2025-02-14T13:30:54.4135292Z [command]/usr/bin/docker images
+2025-02-14T13:30:54.4138187Z [command]/usr/bin/docker push ***/maheshnginxapp:latest
+2025-02-14T13:30:54.4138392Z REPOSITORY                                    TAG             IMAGE ID       CREATED         SIZE
+2025-02-14T13:30:54.4138589Z ***/maheshnginxapp   latest          18cd479c1b12   2 seconds ago   132MB
+2025-02-14T13:30:54.4138830Z belkhudemahesh/python_app                     1               f4691786bd3c   3 days ago      1.01GB
+2025-02-14T13:30:54.4139014Z belkhudemahesh/python_app                     16              f4691786bd3c   3 days ago      1.01GB
+2025-02-14T13:30:54.4139194Z belkhudemahesh/python_app                     17              f4691786bd3c   3 days ago      1.01GB
+2025-02-14T13:30:54.4139374Z belkhudemahesh/python_app                     18              f4691786bd3c   3 days ago      1.01GB
+2025-02-14T13:30:54.4139552Z belkhudemahesh/python_app                     19              f4691786bd3c   3 days ago      1.01GB
+2025-02-14T13:30:54.4139728Z belkhudemahesh/python_app                     2               f4691786bd3c   3 days ago      1.01GB
+2025-02-14T13:30:54.4139907Z belkhudemahesh/python_app                     20              f4691786bd3c   3 days ago      1.01GB
+2025-02-14T13:30:54.4140083Z belkhudemahesh/python_app                     21              f4691786bd3c   3 days ago      1.01GB
+2025-02-14T13:30:54.4140263Z belkhudemahesh/python_app                     3               f4691786bd3c   3 days ago      1.01GB
+2025-02-14T13:30:54.4140437Z belkhudemahesh/python_app                     4               f4691786bd3c   3 days ago      1.01GB
+2025-02-14T13:30:54.4140610Z belkhudemahesh/python_app                     5               f4691786bd3c   3 days ago      1.01GB
+2025-02-14T13:30:54.4140785Z belkhudemahesh/python_app                     6               f4691786bd3c   3 days ago      1.01GB
+2025-02-14T13:30:54.4140963Z belkhudemahesh/python_app                     7               f4691786bd3c   3 days ago      1.01GB
+2025-02-14T13:30:54.4141136Z belkhudemahesh/python_app                     8               f4691786bd3c   3 days ago      1.01GB
+2025-02-14T13:30:54.4141954Z ubuntu                                        latest          a04dc4851cbc   2 weeks ago     78.1MB
+2025-02-14T13:30:54.4142121Z python                                        3.7             16d93ae3411b   19 months ago   994MB
+2025-02-14T13:30:54.4142305Z belkhudemahesh/jenkinsrepo                    12              29d057bb43b8   23 months ago   175MB
+2025-02-14T13:30:54.4142484Z belkhudemahesh/jenkinsrepo                    13              29d057bb43b8   23 months ago   175MB
+2025-02-14T13:30:54.4142662Z belkhudemahesh/jenkinsrepo                    14              29d057bb43b8   23 months ago   175MB
+2025-02-14T13:30:54.4142840Z belkhudemahesh/jenkinsrepo                    latest          29d057bb43b8   23 months ago   175MB
+2025-02-14T13:30:54.4143013Z nginx-serv                                    latest          29d057bb43b8   23 months ago   175MB
+2025-02-14T13:30:54.4143181Z ubuntu                                        <none>          58db3edaf2be   2 years ago     77.8MB
+2025-02-14T13:30:54.4143347Z node                                          12.2.0-alpine   f391dabf9dce   5 years ago     77.7MB
+2025-02-14T13:30:54.4143424Z 
+2025-02-14T13:30:54.4144008Z The push refers to repository [***/maheshnginxapp]
+2025-02-14T13:30:54.4144431Z b47fca8e97e2: Preparing
+2025-02-14T13:30:54.4144564Z d21b9f3b090f: Preparing
+2025-02-14T13:30:54.4144693Z 4b7c01ed0534: Preparing
+2025-02-14T13:30:59.6943126Z b47fca8e97e2: Pushed
+2025-02-14T13:31:04.6390831Z d21b9f3b090f: Pushed
+2025-02-14T13:31:08.0576561Z 4b7c01ed0534: Pushed
+2025-02-14T13:31:13.1425625Z latest: digest: sha256:edbfed35f7b395113cc536c2e4629e5de36add25db0e97a4163cbea4162beb41 size: 948
+2025-02-14T13:31:13.1477433Z 
+2025-02-14T13:31:13.1527538Z [command]/usr/bin/docker history --format createdAt:{{.CreatedAt}}; layerSize:{{.Size}}; createdBy:{{.CreatedBy}}; layerId:{{.ID}} --no-trunc ***/maheshnginxapp:latest
+2025-02-14T13:31:13.1788762Z createdAt:2025-02-14T13:30:50Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL image.base.ref.name=ubuntu:latest; layerId:sha256:18cd479c1b12108efbdd82ff7d6c1c17efcbcbec363795ec531e960094787b7c
+2025-02-14T13:31:13.1789293Z createdAt:2025-02-14T13:30:50Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL image.base.digest=sha256:72297848456d5d37d1262630108ab308d3e9ec7ed1c3286a32fe09856619a782; layerId:sha256:00ecd3ea58807decd579551a0e377a6aa614305225c61fe792c56fb03cbc0a45
+2025-02-14T13:31:13.1789774Z createdAt:2025-02-14T13:30:49Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.system.teamproject=mahesh_Docker_Applications; layerId:sha256:6be451f5ee58f18eb2836f74fec73b9d67f03c7eaafa6126883f2c6cbde284b5
+2025-02-14T13:31:13.1790209Z createdAt:2025-02-14T13:30:48Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.system.teamfoundationcollectionuri=https://dev.azure.com/akashz0583/; layerId:sha256:d58e1dfd8737e1da399e5155f34c05ba95b19492b004b79e4aee9e63047aebd6
+2025-02-14T13:31:13.1790638Z createdAt:2025-02-14T13:30:48Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.sourceversion=3b9b05c0187277b12e03bff7672bf647c96ab6c1; layerId:sha256:8c458b045eb0c86ca4ec079ee5f73089c318df65b1b5c8c7f3fe9a70550e3b40
+2025-02-14T13:31:13.1792333Z createdAt:2025-02-14T13:30:47Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.sourcebranchname=main; layerId:sha256:591db5c96a64ab27149452be538bd9a5713c649eb0dcfce9b4bf95bef80ef0e3
+2025-02-14T13:31:13.1792884Z createdAt:2025-02-14T13:30:47Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.repository.uri=https://akashz0583@dev.azure.com/akashz0583/mahesh_Docker_Applications/_git/mahesh_Docker_Applications; layerId:sha256:7e9587ab62c839f5ca5674f996d1de5ed1dee1c080da53280f3901d99d501564
+2025-02-14T13:31:13.1793350Z createdAt:2025-02-14T13:30:46Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.repository.name=mahesh_Docker_Applications; layerId:sha256:30b785432166a20e5dc53e753f4410093636bec05ca7b3af92bb8ae111ee206c
+2025-02-14T13:31:13.1794137Z createdAt:2025-02-14T13:30:45Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.definitionname=mahesh_Docker_Applications; layerId:sha256:67cb8e2c2c853e337927d7ad9856d25c373b8b1956d075c4102355f43ce27763
+2025-02-14T13:31:13.1794550Z createdAt:2025-02-14T13:30:45Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.builduri=vstfs:///Build/Build/46; layerId:sha256:99ab2667e25691e601cbf4c92c7b80a8898a3ab1e6198c175803a6fd423c99ef
+2025-02-14T13:31:13.1794938Z createdAt:2025-02-14T13:30:45Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.buildnumber=20250214.5; layerId:sha256:c0819fbce030d112a0ecd83fe980c99c52b391851bca602d953a1d581e527e9f
+2025-02-14T13:31:13.1795437Z createdAt:2025-02-14T13:30:44Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  ENTRYPOINT ["/bin/sh" "-c" "service nginx start && /bin/bash"]; layerId:sha256:419db475ace82fdbfb73bf974e8bf8baa317978b6e45c4926dcff35cff980f09
+2025-02-14T13:31:13.1796353Z createdAt:2025-02-14T13:30:43Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  EXPOSE 80; layerId:sha256:ca987e176e19ffdb64d26981aff172c0df67242a64602f2cfeca2710fb0933c4
+2025-02-14T13:31:13.1796783Z createdAt:2025-02-14T13:30:43Z; layerSize:44B; createdBy:/bin/sh -c #(nop) COPY file:d926aff352d07ea91d825b0c61a2d7fbe49eced33e688bc24f0b30d0099409c9 in /var/www/html/ ; layerId:sha256:1ddb4694c48db50acbad3f84b1357b0454ec8c35d7e1dc8b1890d32c21e8493d
+2025-02-14T13:31:13.1797406Z createdAt:2025-02-14T13:30:40Z; layerSize:54MB; createdBy:/bin/sh -c apt update && apt install -y nginx; layerId:sha256:fba654efd11bb57719a5709197caf5a6e009220e2ce87ca9c82c2396461e463d
+2025-02-14T13:31:13.1797760Z createdAt:2025-02-14T13:30:05Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  MAINTAINER Mahesh; layerId:sha256:d6341c6ca79c20b8e15fe0a1d4a819c5f9bbbfe66f8c58f6d04e1501a77f3ee2
+2025-02-14T13:31:13.1798088Z createdAt:2025-01-27T04:14:03Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  CMD ["/bin/bash"]; layerId:sha256:a04dc4851cbcbb42b54d1f52a41f5f9eca6a5fd03748c3f6eb2cbeb238ca99bd
+2025-02-14T13:31:13.1798421Z createdAt:2025-01-27T04:14:03Z; layerSize:78.1MB; createdBy:/bin/sh -c #(nop) ADD file:6df775300d76441aa33f31b22c1afce8dfe35c8ffbc14ef27c27009235b12a95 in / ; layerId:<missing>
+2025-02-14T13:31:13.1798727Z createdAt:2025-01-27T04:14:00Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=24.04; layerId:<missing>
+2025-02-14T13:31:13.1799005Z createdAt:2025-01-27T04:14:00Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu; layerId:<missing>
+2025-02-14T13:31:13.1799271Z createdAt:2025-01-27T04:14:00Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH; layerId:<missing>
+2025-02-14T13:31:13.1799519Z createdAt:2025-01-27T04:14:00Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  ARG RELEASE; layerId:<missing>
+2025-02-14T13:31:13.1814369Z 
+2025-02-14T13:31:13.1836707Z [command]/usr/bin/docker inspect 18cd479c1b12108efbdd82ff7d6c1c17efcbcbec363795ec531e960094787b7c -f {{.RootFS.Layers}}
+2025-02-14T13:31:13.2042057Z [sha256:4b7c01ed0534d4f9be9cf97d068da1598c6c20b26cb6134fad066defdb6d541d sha256:d21b9f3b090fa6ae75fb8500fab5fa3828d07219fbdb068ee909adf701126f2a sha256:b47fca8e97e283ef8c51ee325c259ab6b62da33564f66de0476c2b25bcc559c7]
+2025-02-14T13:31:13.2073229Z 
+2025-02-14T13:31:13.4444136Z ##[section]Finishing: push docker image to ACR

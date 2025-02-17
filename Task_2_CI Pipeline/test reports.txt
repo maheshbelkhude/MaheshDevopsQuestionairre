@@ -1,0 +1,194 @@
+2025-02-13T07:48:43.0521945Z ##[section]Starting: Job
+2025-02-13T07:48:44.0828188Z ##[section]Starting: Initialize job
+2025-02-13T07:48:44.0833435Z Agent name: 'ubuntu'
+2025-02-13T07:48:44.0834526Z Agent machine name: 'ubuntu'
+2025-02-13T07:48:44.0835095Z Current agent version: '4.251.0'
+2025-02-13T07:48:45.8734560Z Agent running as: 'ubuntu'
+2025-02-13T07:48:45.8781148Z Prepare build directory.
+2025-02-13T07:48:45.9084595Z Set build variables.
+2025-02-13T07:48:45.9102975Z Download all required tasks.
+2025-02-13T07:48:46.7640472Z Checking job knob settings.
+2025-02-13T07:48:46.7643802Z    Knob: DockerActionRetries = true Source: $(VSTSAGENT_DOCKER_ACTION_RETRIES) 
+2025-02-13T07:48:46.7644633Z    Knob: UseGitLongPaths = true Source: $(USE_GIT_LONG_PATHS) 
+2025-02-13T07:48:46.7645751Z    Knob: EnableIssueSourceValidation = true Source: $(ENABLE_ISSUE_SOURCE_VALIDATION) 
+2025-02-13T07:48:46.7646220Z    Knob: AgentEnablePipelineArtifactLargeChunkSize = true Source: $(AGENT_ENABLE_PIPELINEARTIFACT_LARGE_CHUNK_SIZE) 
+2025-02-13T07:48:46.7647662Z    Knob: ContinueAfterCancelProcessTreeKillAttempt = true Source: $(VSTSAGENT_CONTINUE_AFTER_CANCEL_PROCESSTREEKILL_ATTEMPT) 
+2025-02-13T07:48:46.7648052Z    Knob: ProcessHandlerSecureArguments = false Source: $(AZP_75787_ENABLE_NEW_LOGIC) 
+2025-02-13T07:48:46.7648323Z    Knob: ProcessHandlerSecureArguments = false Source: $(AZP_75787_ENABLE_NEW_LOGIC_LOG) 
+2025-02-13T07:48:46.7648559Z    Knob: ProcessHandlerTelemetry = true Source: $(AZP_75787_ENABLE_COLLECT) 
+2025-02-13T07:48:46.7648847Z    Knob: UseNewNodeHandlerTelemetry = True Source: $(DistributedTask.Agent.USENEWNODEHANDLERTELEMETRY) 
+2025-02-13T07:48:46.7649101Z    Knob: ProcessHandlerEnableNewLogic = true Source: $(AZP_75787_ENABLE_NEW_PH_LOGIC) 
+2025-02-13T07:48:46.7649468Z    Knob: EnableResourceMonitorDebugOutput = true Source: $(AZP_ENABLE_RESOURCE_MONITOR_DEBUG_OUTPUT) 
+2025-02-13T07:48:46.7649737Z    Knob: EnableResourceUtilizationWarnings = true Source: $(AZP_ENABLE_RESOURCE_UTILIZATION_WARNINGS) 
+2025-02-13T07:48:46.7650107Z    Knob: IgnoreVSTSTaskLib = true Source: $(AZP_AGENT_IGNORE_VSTSTASKLIB) 
+2025-02-13T07:48:46.7650334Z    Knob: FailJobWhenAgentDies = true Source: $(FAIL_JOB_WHEN_AGENT_DIES) 
+2025-02-13T07:48:46.7650634Z    Knob: CheckForTaskDeprecation = true Source: $(AZP_AGENT_CHECK_FOR_TASK_DEPRECATION) 
+2025-02-13T07:48:46.7650982Z    Knob: CheckIfTaskNodeRunnerIsDeprecated246 = True Source: $(DistributedTask.Agent.CheckIfTaskNodeRunnerIsDeprecated246) 
+2025-02-13T07:48:46.7651319Z    Knob: UseNode20ToStartContainer = True Source: $(DistributedTask.Agent.UseNode20ToStartContainer) 
+2025-02-13T07:48:46.7651634Z    Knob: LogTaskNameInUserAgent = true Source: $(AZP_AGENT_LOG_TASKNAME_IN_USERAGENT) 
+2025-02-13T07:48:46.7651892Z    Knob: UseFetchFilterInCheckoutTask = true Source: $(AGENT_USE_FETCH_FILTER_IN_CHECKOUT_TASK) 
+2025-02-13T07:48:46.7652207Z    Knob: Rosetta2Warning = true Source: $(ROSETTA2_WARNING) 
+2025-02-13T07:48:46.7652839Z    Knob: AddForceCredentialsToGitCheckout = True Source: $(DistributedTask.Agent.AddForceCredentialsToGitCheckout) 
+2025-02-13T07:48:46.7653143Z Finished checking job knob settings.
+2025-02-13T07:48:46.8051655Z Start tracking orphan processes.
+2025-02-13T07:48:46.8478419Z ##[section]Finishing: Initialize job
+2025-02-13T07:48:46.8541002Z ##[section]Async Command Start: DetectDockerContainer
+2025-02-13T07:48:46.8541572Z ##[section]Async Command End: DetectDockerContainer
+2025-02-13T07:48:46.8542694Z ##[section]Async Command Start: DetectDockerContainer
+2025-02-13T07:48:46.8542911Z ##[section]Async Command End: DetectDockerContainer
+2025-02-13T07:48:46.8660882Z ##[section]Starting: Checkout mahesh-devop-project@main to s
+2025-02-13T07:48:46.8750148Z ==============================================================================
+2025-02-13T07:48:46.8751157Z Task         : Get sources
+2025-02-13T07:48:46.8751600Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2025-02-13T07:48:46.8751952Z Version      : 1.0.0
+2025-02-13T07:48:46.8752258Z Author       : Microsoft
+2025-02-13T07:48:46.8753089Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2025-02-13T07:48:46.8753188Z ==============================================================================
+2025-02-13T07:48:48.6374557Z Syncing repository: mahesh-devop-project (Git)
+2025-02-13T07:48:48.6385648Z ##[command]git version
+2025-02-13T07:48:48.6394466Z git version 2.34.1
+2025-02-13T07:48:48.6395697Z ##[command]git config --get remote.origin.url
+2025-02-13T07:48:48.6402202Z ##[command]git clean -ffdx
+2025-02-13T07:48:48.6468618Z Removing node_modules/
+2025-02-13T07:48:48.6468822Z Removing package-lock.json
+2025-02-13T07:48:48.6469669Z ##[command]git reset --hard HEAD
+2025-02-13T07:48:48.6473045Z HEAD is now at 7229288 Updated test.js
+2025-02-13T07:48:48.6479835Z ##[command]git config gc.auto 0
+2025-02-13T07:48:48.6483691Z ##[command]git config core.longpaths true
+2025-02-13T07:48:48.6487977Z ##[command]git config --get-all http.https://akashz0583@dev.azure.com/akashz0583/mahesh-devop-project/_git/mahesh-devop-project.extraheader
+2025-02-13T07:48:48.6492707Z ##[command]git config --get-all http.extraheader
+2025-02-13T07:48:48.6496524Z ##[command]git config --get-regexp .*extraheader
+2025-02-13T07:48:48.6567518Z ##[command]git config --get-all http.proxy
+2025-02-13T07:48:48.6571327Z ##[command]git config http.version HTTP/1.1
+2025-02-13T07:48:48.6581545Z ##[command]git --config-env=http.extraheader=env_var_http.extraheader fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1  +d06b2fad719be3b970637c73222323e8b2a615e8:refs/remotes/origin/d06b2fad719be3b970637c73222323e8b2a615e8
+2025-02-13T07:48:48.6587963Z remote: Azure Repos        
+2025-02-13T07:48:48.6588093Z remote: 
+2025-02-13T07:48:48.6588212Z remote: Found 8 objects to send. (0 ms)        
+2025-02-13T07:48:48.6588380Z From https://dev.azure.com/akashz0583/mahesh-devop-project/_git/mahesh-devop-project
+2025-02-13T07:48:48.6588585Z  * [new ref]         d06b2fad719be3b970637c73222323e8b2a615e8 -> origin/d06b2fad719be3b970637c73222323e8b2a615e8
+2025-02-13T07:48:49.6436128Z ##[command]git --config-env=http.extraheader=env_var_http.extraheader fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1  +d06b2fad719be3b970637c73222323e8b2a615e8
+2025-02-13T07:48:49.6439365Z remote: Azure Repos        
+2025-02-13T07:48:49.6439485Z remote: 
+2025-02-13T07:48:49.6439614Z remote: Found 0 objects to send. (0 ms)        
+2025-02-13T07:48:49.6439832Z From https://dev.azure.com/akashz0583/mahesh-devop-project/_git/mahesh-devop-project
+2025-02-13T07:48:49.6440075Z  * branch            d06b2fad719be3b970637c73222323e8b2a615e8 -> FETCH_HEAD
+2025-02-13T07:48:50.5581338Z ##[command]git checkout --progress --force refs/remotes/origin/d06b2fad719be3b970637c73222323e8b2a615e8
+2025-02-13T07:48:50.5584620Z Previous HEAD position was 7229288 Updated test.js
+2025-02-13T07:48:50.5584793Z HEAD is now at d06b2fa Updated test.js
+2025-02-13T07:48:50.5629911Z ##[section]Finishing: Checkout mahesh-devop-project@main to s
+2025-02-13T07:48:50.5648791Z ##[section]Starting: Install Node.js
+2025-02-13T07:48:50.5655815Z ==============================================================================
+2025-02-13T07:48:50.5655924Z Task         : Node.js tool installer
+2025-02-13T07:48:50.5655995Z Description  : Finds or downloads and caches the specified version spec of Node.js and adds it to the PATH
+2025-02-13T07:48:50.5656090Z Version      : 0.247.1
+2025-02-13T07:48:50.5656152Z Author       : Microsoft Corporation
+2025-02-13T07:48:50.5657026Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/node-js
+2025-02-13T07:48:50.5657115Z ==============================================================================
+2025-02-13T07:48:52.8099049Z Found tool in cache: node 16.20.2 x64
+2025-02-13T07:48:52.8105229Z Prepending PATH environment variable with directory: /home/ubuntu/myagent/_work/_tool/node/16.20.2/x64/bin
+2025-02-13T07:48:53.8342173Z ##[section]Finishing: Install Node.js
+2025-02-13T07:48:53.8357219Z ##[section]Starting: Install Dependencies
+2025-02-13T07:48:53.8362204Z ==============================================================================
+2025-02-13T07:48:53.8362319Z Task         : Command line
+2025-02-13T07:48:53.8362375Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2025-02-13T07:48:53.8362469Z Version      : 2.250.1
+2025-02-13T07:48:53.8362541Z Author       : Microsoft Corporation
+2025-02-13T07:48:53.8362603Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2025-02-13T07:48:53.8362690Z ==============================================================================
+2025-02-13T07:48:55.8857626Z Generating script.
+2025-02-13T07:48:55.8865586Z Script contents:
+2025-02-13T07:48:55.8879182Z npm install
+2025-02-13T07:48:55.8879765Z ========================== Starting Command Output ===========================
+2025-02-13T07:48:55.8880067Z [command]/usr/bin/bash --noprofile --norc /home/ubuntu/myagent/_work/_temp/9ea803b2-5f30-45eb-a76b-4b5823f1595d.sh
+2025-02-13T07:48:58.4730019Z npm WARN deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+2025-02-13T07:48:58.6013913Z npm WARN deprecated glob@8.1.0: Glob versions prior to v9 are no longer supported
+2025-02-13T07:48:58.7475761Z npm WARN deprecated superagent@8.1.2: Please upgrade to v9.0.0+ as we have fixed a public vulnerability with formidable dependency. Note that v9.0.0+ requires Node.js v14.18.0+. See https://github.com/ladjs/superagent/pull/1800 for insight. This project is supported and maintained by the team at Forward Email @ https://forwardemail.net
+2025-02-13T07:48:58.9765546Z 
+2025-02-13T07:48:58.9766568Z added 163 packages, and audited 164 packages in 3s
+2025-02-13T07:48:58.9774621Z 
+2025-02-13T07:48:58.9781804Z 35 packages are looking for funding
+2025-02-13T07:48:58.9791371Z   run `npm fund` for details
+2025-02-13T07:48:58.9809954Z 
+2025-02-13T07:48:58.9810794Z found 0 vulnerabilities
+2025-02-13T07:48:59.0070434Z 
+2025-02-13T07:48:59.0141134Z ##[section]Finishing: Install Dependencies
+2025-02-13T07:48:59.0157774Z ##[section]Starting: Run Unit Tests
+2025-02-13T07:48:59.0162389Z ==============================================================================
+2025-02-13T07:48:59.0162490Z Task         : Command line
+2025-02-13T07:48:59.0162551Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2025-02-13T07:48:59.0162634Z Version      : 2.250.1
+2025-02-13T07:48:59.0162685Z Author       : Microsoft Corporation
+2025-02-13T07:48:59.0162760Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2025-02-13T07:48:59.0162839Z ==============================================================================
+2025-02-13T07:49:00.9601025Z Generating script.
+2025-02-13T07:49:00.9609937Z Script contents:
+2025-02-13T07:49:00.9610730Z npm test
+2025-02-13T07:49:00.9613078Z ========================== Starting Command Output ===========================
+2025-02-13T07:49:00.9636481Z [command]/usr/bin/bash --noprofile --norc /home/ubuntu/myagent/_work/_temp/05955eb7-db02-4cf9-a9f3-905b2299099a.sh
+2025-02-13T07:49:01.3630256Z 
+2025-02-13T07:49:01.3631314Z > simple-node-app@1.0.0 test
+2025-02-13T07:49:01.3631712Z > mocha test.js
+2025-02-13T07:49:01.3651941Z 
+2025-02-13T07:49:01.8426100Z 
+2025-02-13T07:49:01.8435517Z 
+2025-02-13T07:49:01.8441927Z   GET /
+2025-02-13T07:49:01.8734280Z     ✔ should return 'Hello World, Welcome to Azure CI/CD!'
+2025-02-13T07:49:01.8734587Z 
+2025-02-13T07:49:01.8734655Z 
+2025-02-13T07:49:01.8734865Z   1 passing (23ms)
+2025-02-13T07:49:01.8734921Z 
+2025-02-13T07:49:01.8871413Z 
+2025-02-13T07:49:01.8949806Z ##[section]Finishing: Run Unit Tests
+2025-02-13T07:49:01.8964232Z ##[section]Starting: Prepare Artifact for Publishing
+2025-02-13T07:49:01.8968687Z ==============================================================================
+2025-02-13T07:49:01.8969021Z Task         : Command line
+2025-02-13T07:49:01.8969088Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2025-02-13T07:49:01.8969192Z Version      : 2.250.1
+2025-02-13T07:49:01.8969248Z Author       : Microsoft Corporation
+2025-02-13T07:49:01.8969320Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2025-02-13T07:49:01.8969417Z ==============================================================================
+2025-02-13T07:49:04.0698333Z Generating script.
+2025-02-13T07:49:04.0705489Z ========================== Starting Command Output ===========================
+2025-02-13T07:49:04.0720723Z [command]/usr/bin/bash --noprofile --norc /home/ubuntu/myagent/_work/_temp/b80ce373-4ffd-4b88-8861-7dba78c8ffc7.sh
+2025-02-13T07:49:04.5426030Z 
+2025-02-13T07:49:04.5505558Z ##[section]Finishing: Prepare Artifact for Publishing
+2025-02-13T07:49:04.5519986Z ##[section]Starting: Publish Build Artifacts
+2025-02-13T07:49:04.5524782Z ==============================================================================
+2025-02-13T07:49:04.5524882Z Task         : Publish build artifacts
+2025-02-13T07:49:04.5524936Z Description  : Publish build artifacts to Azure Pipelines or a Windows file share
+2025-02-13T07:49:04.5525016Z Version      : 1.247.1
+2025-02-13T07:49:04.5525074Z Author       : Microsoft Corporation
+2025-02-13T07:49:04.5525129Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/publish-build-artifacts
+2025-02-13T07:49:04.5525226Z ==============================================================================
+2025-02-13T07:49:09.3662268Z ##[section]Async Command Start: Upload Artifact
+2025-02-13T07:49:09.3663057Z Uploading 1513 files
+2025-02-13T07:49:14.3690866Z Total file: 1513 ---- Processed file: 70 (4%)
+2025-02-13T07:49:24.3846298Z Total file: 1513 ---- Processed file: 216 (14%)
+2025-02-13T07:49:34.3956020Z Total file: 1513 ---- Processed file: 372 (24%)
+2025-02-13T07:49:44.4136340Z Total file: 1513 ---- Processed file: 540 (35%)
+2025-02-13T07:49:54.4278701Z Total file: 1513 ---- Processed file: 714 (47%)
+2025-02-13T07:50:04.4327028Z Total file: 1513 ---- Processed file: 877 (57%)
+2025-02-13T07:50:14.4392355Z Total file: 1513 ---- Processed file: 1039 (68%)
+2025-02-13T07:50:24.4408127Z Total file: 1513 ---- Processed file: 1199 (79%)
+2025-02-13T07:50:34.4440682Z Total file: 1513 ---- Processed file: 1351 (89%)
+2025-02-13T07:50:44.4440273Z Total file: 1513 ---- Processed file: 1510 (99%)
+2025-02-13T07:50:44.9450428Z File upload succeed.
+2025-02-13T07:50:44.9450668Z Upload '/home/ubuntu/myagent/_work/1/a/output' to file container: '#/69078044/node-app'
+2025-02-13T07:50:45.6454416Z Associated artifact 1 with build 14
+2025-02-13T07:50:45.6454659Z ##[section]Async Command End: Upload Artifact
+2025-02-13T07:50:45.6456103Z ##[section]Finishing: Publish Build Artifacts
+2025-02-13T07:50:45.6485448Z ##[section]Starting: Checkout mahesh-devop-project@main to s
+2025-02-13T07:50:45.6491197Z ==============================================================================
+2025-02-13T07:50:45.6491450Z Task         : Get sources
+2025-02-13T07:50:45.6491580Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2025-02-13T07:50:45.6491744Z Version      : 1.0.0
+2025-02-13T07:50:45.6491837Z Author       : Microsoft
+2025-02-13T07:50:45.6491963Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2025-02-13T07:50:45.6492118Z ==============================================================================
+2025-02-13T07:50:45.9311230Z Cleaning any cached credential from repository: mahesh-devop-project (Git)
+2025-02-13T07:50:45.9807005Z ##[section]Finishing: Checkout mahesh-devop-project@main to s
+2025-02-13T07:50:45.9832551Z ##[section]Starting: Finalize Job
+2025-02-13T07:50:45.9841921Z Cleaning up task key
+2025-02-13T07:50:45.9842813Z Start cleaning up orphan processes.
+2025-02-13T07:50:46.0264649Z ##[section]Finishing: Finalize Job
+2025-02-13T07:50:46.0288581Z ##[section]Finishing: Job
